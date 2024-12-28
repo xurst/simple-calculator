@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xurst's calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="title">xurst's calculator</div>
+<div class="container">
+    <div class="calculator">
+        <div class="box">
+            <input type="text" id="display" class="input-field" readonly>
+        </div>
+        <div class="buttons">
+            <button class="box clear" onclick="clearDisplay()">C</button>
+            <button class="box" onclick="changeSign()">+/-</button>
+            <button class="box" onclick="appendToDisplay('%')">%</button>
+            <button class="box operator" onclick="appendToDisplay('/')">/</button>
+            <button class="box" onclick="appendToDisplay('7')">7</button>
+            <button class="box" onclick="appendToDisplay('8')">8</button>
+            <button class="box" onclick="appendToDisplay('9')">9</button>
+            <button class="box operator" onclick="appendToDisplay('*')">×</button>
+            <button class="box" onclick="appendToDisplay('4')">4</button>
+            <button class="box" onclick="appendToDisplay('5')">5</button>
+            <button class="box" onclick="appendToDisplay('6')">6</button>
+            <button class="box operator" onclick="appendToDisplay('-')">-</button>
+            <button class="box" onclick="appendToDisplay('1')">1</button>
+            <button class="box" onclick="appendToDisplay('2')">2</button>
+            <button class="box" onclick="appendToDisplay('3')">3</button>
+            <button class="box operator" onclick="appendToDisplay('+')">+</button>
+            <button class="box zero" onclick="appendToDisplay('0')">0</button>
+            <button class="box" onclick="appendToDisplay('.')">.</button>
+            <button class="box equals operator" onclick="calculate()">=</button>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

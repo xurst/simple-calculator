@@ -21,6 +21,8 @@ function clearDisplay() {
     newEquation = true;
 }
 
+// indent
+
 function calculate() {
     try {
         let display = document.getElementById('display');
